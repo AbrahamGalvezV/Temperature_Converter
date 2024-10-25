@@ -7,8 +7,29 @@
     <title>Temperature converter</title>
   </head>
   <body>
-
-
+    <section class="transform">
+      <div class="container">
+        <hi class="transform__tittle">Temperature converter</hi>
+        <div class="transform__wrapper">
+          <input
+            type="namber"
+            id="number"
+            class="transform__input"
+            placeholder="Enter temperature plis"
+          />
+          <p class="transform__text">Select the entered value</p>
+          <div class="transform__btns">
+            <button class="transform__btn" onclick="converterTemperature('f')">
+              Farhenheit
+            </button>
+            <button class="transform__btn" onclick="converterTemperature('f')">
+              Celsius
+            </button>
+          </div>
+          <p class="transform__text" id="resuts"></p>
+        </div>
+      </div>
+    </section>
 
     <script src="./main/calculadora.js"></script>
   </body>

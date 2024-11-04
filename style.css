@@ -35,11 +35,11 @@ body:before {
   left: 0;
   right: 0;
   z-index: -1;
-  background-color: rgba(228, 245, 252, 0.133);
+  background-color: rgba(128, 24, 169, 0.145);
 }
 
 .container {
-  background-color: rgba(41, 41, 41, 0.384);
+  background-color: rgba(123, 123, 123, 0.384);
   width: 550px;
   height: 430px;
   font-size: 24px;
@@ -75,7 +75,7 @@ body:before {
 }
 
 .transform__item {
-  background-color: rgba(150, 150, 150, 0.264);
+  background-color: rgba(225, 225, 225, 0.195);
   min-height: 120px;
   width: 400px;
   font-size: 24px;

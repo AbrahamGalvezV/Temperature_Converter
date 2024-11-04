@@ -3,30 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Temperature converter</title>
   </head>
   <body>
     <section class="transform">
       <div class="container">
-        <hi class="transform__tittle">Temperature converter</hi>
+        <!-- <h1 class="transform__title">Temperature converter</h1> -->
         <div class="transform__wrapper">
-          <input
-            type="namber"
-            id="number"
-            class="transform__input"
-            placeholder="Enter temperature plis"
-          />
-          <p class="transform__text">Select the entered value</p>
-          <div class="transform__btns">
-            <button class="transform__btn" onclick="converterTemperature('f')">
-              Farhenheit
-            </button>
-            <button class="transform__btn" onclick="converterTemperature('f')">
-              Celsius
-            </button>
+          <div class="transform__item">
+            <p class="transform__item__title" id="">Send</p>
+
+            <div class="transform__item__wrapper">
+              <input
+                type="number"
+                id="number"
+                class="transform__input"
+                placeholder="Enter temperature please"
+              />
+              <select name="unitSelector" id="selectorValue1" class="transform__select">
+                <option value="c" >
+                  °C
+                </option>
+                <option value="f" >
+                  °F
+                </option>
+                <option value="k" >
+                  °K
+                </option>
+              </select>
+            </div>
           </div>
-          <p class="transform__text" id="resuts"></p>
+          <div class="transform__item">
+            <p class="transform__item__title" id="">Result</p>
+            <div class="transform__item__wrapper">
+              <p class="transform__text" id="result">0</p>
+              <select name="" id="selectorValue2" class="transform__select">
+                <option value="c" >
+                  °C
+                </option>
+                <option value="f">
+                  °F
+                </option>
+                <option value="k" >
+                  °K
+                </option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,6 @@
+# Configuración de VS Code
+.vscode/
+
+# Node.js
+node_modules/
+

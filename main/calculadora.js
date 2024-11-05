@@ -12,7 +12,8 @@ function convertTemperature() {
   // Calculamos y mostramos el resultado según el valor seleccionado
   let result = "";
 
-  if (value1 === "c") { // Si se introducen Celsius en el box 1
+  if (value1 === "c") {
+    // Si se introducen Celsius en el box 1
 
     if (value2 === "f") {
       const fahrenheit = Math.floor(number * 1.8 + 32);
@@ -20,29 +21,29 @@ function convertTemperature() {
     } else if (value2 === "k") {
       const kelvin = Math.floor(number + 273.15);
       result = `${number}ºC it's the same ${kelvin}ºK`;
-    } else {
+    } else if (value2 === "f") {
       result = `${number}ºC`;
     }
-
-  } else if (value1 === "f") {// Si se introducen Fahrenheits en el box 1
+  } else if (value1 === "f") {
+    // Si se introducen Fahrenheits en el box 1
     if (value2 === "c") {
       const celsius = Math.floor((number - 32) / 1.8);
       result = `${number}ºF it's the same ${celsius}ºC`;
     } else if (value2 === "k") {
       const kelvin = Math.floor(((number - 32) * 5) / 9 + 273.15);
       result = `${number}ºF it's the same ${kelvin}ºK`;
-    } else {
+    } else if (value2 === "f") {
       result = `${number}ºF`;
     }
-
-  } else if (value1 === "k") {// Si se introducen Kelvin en el box 1
+  } else if (value1 === "k") {
+    // Si se introducen Kelvin en el box 1
     if (value2 === "c") {
       const celsius = Math.floor(number - 273.15);
       result = `${number}ºK it's the same ${celsius}ºC`;
     } else if (value2 === "f") {
       const fahrenheit = Math.floor(((number - 273.15) * 9) / 5 + 32);
       result = `${number}ºK it's the same ${fahrenheit}ºF`;
-    } else {
+    } else if (value2 === "k") {
       result = `${number}ºK`;
     }
   }

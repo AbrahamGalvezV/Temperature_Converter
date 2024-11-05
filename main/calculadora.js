@@ -21,7 +21,7 @@ function convertTemperature() {
     } else if (value2 === "k") {
       const kelvin = Math.floor(number + 273.15);
       result = `${number}ºC it's the same ${kelvin}ºK`;
-    } else if (value2 === "c") {
+    } else {
       result = `${number}ºC`;
     }
   } else if (value1 === "f") {
@@ -32,7 +32,7 @@ function convertTemperature() {
     } else if (value2 === "k") {
       const kelvin = Math.floor(((number - 32) * 5) / 9 + 273.15);
       result = `${number}ºF it's the same ${kelvin}ºK`;
-    } else if (value2 === "f") {
+    } else {
       result = `${number}ºF`;
     }
   } else if (value1 === "k") {
@@ -43,7 +43,7 @@ function convertTemperature() {
     } else if (value2 === "f") {
       const fahrenheit = Math.floor(((number - 273.15) * 9) / 5 + 32);
       result = `${number}ºK it's the same ${fahrenheit}ºF`;
-    } else if (value2 === "k") {
+    } else {
       result = `${number}ºK`;
     }
   }

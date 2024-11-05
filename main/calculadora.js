@@ -21,7 +21,7 @@ function convertTemperature() {
     } else if (value2 === "k") {
       const kelvin = Math.floor(number + 273.15);
       result = `${number}ºC it's the same ${kelvin}ºK`;
-    } else if (value2 === "f") {
+    } else if (value2 === "c") {
       result = `${number}ºC`;
     }
   } else if (value1 === "f") {

@@ -14,7 +14,6 @@ function convertTemperature() {
 
   if (value1 === "c") {
     // Si se introducen Celsius en el box 1
-
     if (value2 === "f") {
       const fahrenheit = Math.floor(number * 1.8 + 32);
       result = `${number}ºC it's the same ${fahrenheit}ºF`;

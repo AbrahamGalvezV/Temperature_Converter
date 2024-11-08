@@ -64,6 +64,15 @@ body:before {
   width: 85%;
 }
 
+.transform__input:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.transform__input:focus {
+  outline: 2px solid #1f1f1f73;
+  border-radius: 10px;
+}
+
 .transform__input::placeholder {
   color: rgba(0, 0, 0, 0.816);
 }
@@ -84,6 +93,10 @@ body:before {
   border-radius: 20px;
 }
 
+.transform__item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .transform__item__title {
   margin-bottom: 10px;
 }
@@ -96,4 +109,8 @@ body:before {
 .transform__select {
   background-color: rgba(51, 51, 51, 0.265);
   border-radius: 10px;
+}
+
+.transform__select:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }

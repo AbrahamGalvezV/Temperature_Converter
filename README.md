@@ -58,9 +58,8 @@ code: const fahrenheit = Math.floor(((number - 273.15) * 9) / 5 + 32);
 ## 💻 ¿Quieres comprobar esta función? 
 
 - [Visita el Conversor de Temperatura](https://abrahamgalvezv.github.io/Temperature_converter/)
-
-
 - Clona este repositorio en tu equipo y comprueba cómo está creado
+- Implementa esta función en tu proyecto 
 
 ## 📭 Contacto 
 
